@@ -158,6 +158,82 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vim" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/14/vim/">vim</a>
+    </h1>
+  
+
+        
+        <a href="/2018/09/14/vim/" class="archive-article-date">
+  	<time datetime="2018-09-14T01:23:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="vim编辑器入门"><a href="#vim编辑器入门" class="headerlink" title="vim编辑器入门"></a>vim编辑器入门</h2><h3 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">:w保存编辑后的文件内容，但不退出Vim编辑器。这个命令的作用是把内存缓冲区中的数据写到启动Vim时指定的文件中。</span><br><span class="line"></span><br><span class="line">:w!强制写文件，即强制覆盖原有文件。如果原有文件的访问权限不允许写入文件，例如，原有的文件为只读文件，则可使用这个命令强制写入。但是，这种命令用法仅当用户是文件的属主时才适用，而超级用户则不受此限制。</span><br><span class="line"></span><br><span class="line">:wq保存文件内容后退出Vim编辑器。这个命令的作用是把内存缓冲区中的数据写到启动Vim时指定的文件中，然后退出Vim编辑器。另外一种替代的方法是用ZZ命令。</span><br><span class="line"></span><br><span class="line">:wq!强制保存文件内容后退出Vim编辑器。这个命令的作用是把内存缓冲区中的数据强制写到启动Vim时指定的文件中，然后退出Vim编辑器。</span><br><span class="line"></span><br><span class="line">ZZ使用ZZ命令时，如果文件已经做过编辑处理，则把内存缓冲区中的数据写到启动Vim时指定的文件中，然后退出Vim编辑器。否则只是退出Vim而已。注意，ZZ命令前面无需加冒号：，也无需按Enter键。</span><br><span class="line"></span><br><span class="line">:q在未做任何编辑处理而准备退出Vim时，可以使用此命令。如果已做过编辑处理，则vim不允许用户使用:q命令退出，同时还会输出下列警告信息：</span><br><span class="line">No write since last change (:quit! overrides)</span><br><span class="line"></span><br><span class="line">:q!强制退出vim编辑器，放弃编辑处理的结果。如果确实不需要保存修改后的文件内容，可输入:q!命令，强行退出vim编辑器。</span><br><span class="line"></span><br><span class="line">:w filename把编辑处理后的结果写到指定的文件中保存</span><br><span class="line"></span><br><span class="line">:w! filename把编辑处理后的结果强制保存到指定的文件中，如果文件已经存在，则覆盖现有的文件。</span><br><span class="line"></span><br><span class="line">:wq! filename把编辑处理后的结果强制保存到指定的文件中，如果文件已经存在，则覆盖现有文件，并退出Vim编辑器。</span><br></pre></td></tr></table></figure>
+<h3 id="复制粘贴"><a href="#复制粘贴" class="headerlink" title="复制粘贴"></a>复制粘贴</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">全部删除：按esc键后，先按gg（到达顶部），然后dG </span><br><span class="line">全部复制：按esc键后，先按gg，然后ggyG </span><br><span class="line">全选高亮显示：按esc键后，先按gg，然后ggvG或者ggVG</span><br><span class="line"></span><br><span class="line">单行复制：按esc键后, 然后yy </span><br><span class="line">单行删除：按esc键后, 然后dd </span><br><span class="line">粘贴：按esc键后, 然后p</span><br></pre></td></tr></table></figure>
+<p>好了，你学会了吗，赶快动动手实践一下吧</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux, vim</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/09/14/vim/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="nginx-部署静态页面" class="article article-type-nginx  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -499,6 +575,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">linux, vim</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">nginx 部署静态页面</a>
